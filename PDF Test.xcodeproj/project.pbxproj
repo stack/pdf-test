@@ -11,6 +11,12 @@
 		DC55650628CB7C020093384F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55650528CB7C020093384F /* ContentView.swift */; };
 		DC55650828CB7C040093384F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC55650728CB7C040093384F /* Assets.xcassets */; };
 		DC55650B28CB7C040093384F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC55650A28CB7C040093384F /* Preview Assets.xcassets */; };
+		DC55651228CB7C440093384F /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55651128CB7C440093384F /* Renderer.swift */; };
+		DC55651A28CBBEDD0093384F /* PDF_Test__macOS_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55651928CBBEDD0093384F /* PDF_Test__macOS_App.swift */; };
+		DC55651E28CBBEDD0093384F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC55651D28CBBEDD0093384F /* Assets.xcassets */; };
+		DC55652128CBBEDD0093384F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC55652028CBBEDD0093384F /* Preview Assets.xcassets */; };
+		DC55652728CBBF020093384F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55650528CB7C020093384F /* ContentView.swift */; };
+		DC55652828CBBF050093384F /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55651128CB7C440093384F /* Renderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +25,23 @@
 		DC55650528CB7C020093384F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC55650728CB7C040093384F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC55650A28CB7C040093384F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC55651128CB7C440093384F /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		DC55651728CBBEDD0093384F /* PDF Test (macOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PDF Test (macOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC55651928CBBEDD0093384F /* PDF_Test__macOS_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDF_Test__macOS_App.swift; sourceTree = "<group>"; };
+		DC55651D28CBBEDD0093384F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC55652028CBBEDD0093384F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC55652228CBBEDD0093384F /* PDF_Test__macOS_.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PDF_Test__macOS_.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC5564FD28CB7C020093384F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55651428CBBEDD0093384F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +54,9 @@
 		DC5564F728CB7C020093384F = {
 			isa = PBXGroup;
 			children = (
+				DC55652628CBBEE30093384F /* Common */,
 				DC55650228CB7C020093384F /* PDF Test */,
+				DC55651828CBBEDD0093384F /* PDF Test (macOS) */,
 				DC55650128CB7C020093384F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				DC55650028CB7C020093384F /* PDF Test.app */,
+				DC55651728CBBEDD0093384F /* PDF Test (macOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +73,8 @@
 		DC55650228CB7C020093384F /* PDF Test */ = {
 			isa = PBXGroup;
 			children = (
-				DC55650328CB7C020093384F /* PDF_TestApp.swift */,
-				DC55650528CB7C020093384F /* ContentView.swift */,
 				DC55650728CB7C040093384F /* Assets.xcassets */,
+				DC55650328CB7C020093384F /* PDF_TestApp.swift */,
 				DC55650928CB7C040093384F /* Preview Content */,
 			);
 			path = "PDF Test";
@@ -65,6 +86,34 @@
 				DC55650A28CB7C040093384F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC55651828CBBEDD0093384F /* PDF Test (macOS) */ = {
+			isa = PBXGroup;
+			children = (
+				DC55651D28CBBEDD0093384F /* Assets.xcassets */,
+				DC55652228CBBEDD0093384F /* PDF_Test__macOS_.entitlements */,
+				DC55651928CBBEDD0093384F /* PDF_Test__macOS_App.swift */,
+				DC55651F28CBBEDD0093384F /* Preview Content */,
+			);
+			path = "PDF Test (macOS)";
+			sourceTree = "<group>";
+		};
+		DC55651F28CBBEDD0093384F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DC55652028CBBEDD0093384F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC55652628CBBEE30093384F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DC55650528CB7C020093384F /* ContentView.swift */,
+				DC55651128CB7C440093384F /* Renderer.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +136,23 @@
 			productReference = DC55650028CB7C020093384F /* PDF Test.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC55651628CBBEDD0093384F /* PDF Test (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC55652328CBBEDD0093384F /* Build configuration list for PBXNativeTarget "PDF Test (macOS)" */;
+			buildPhases = (
+				DC55651328CBBEDD0093384F /* Sources */,
+				DC55651428CBBEDD0093384F /* Frameworks */,
+				DC55651528CBBEDD0093384F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PDF Test (macOS)";
+			productName = "PDF Test (macOS)";
+			productReference = DC55651728CBBEDD0093384F /* PDF Test (macOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +164,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					DC5564FF28CB7C020093384F = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					DC55651628CBBEDD0093384F = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -116,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				DC5564FF28CB7C020093384F /* PDF Test */,
+				DC55651628CBBEDD0093384F /* PDF Test (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +200,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC55651528CBBEDD0093384F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55652128CBBEDD0093384F /* Preview Assets.xcassets in Resources */,
+				DC55651E28CBBEDD0093384F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,7 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC55650628CB7C020093384F /* ContentView.swift in Sources */,
+				DC55651228CB7C440093384F /* Renderer.swift in Sources */,
 				DC55650428CB7C020093384F /* PDF_TestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC55651328CBBEDD0093384F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC55652728CBBF020093384F /* ContentView.swift in Sources */,
+				DC55652828CBBF050093384F /* Renderer.swift in Sources */,
+				DC55651A28CBBEDD0093384F /* PDF_Test__macOS_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +407,64 @@
 			};
 			name = Release;
 		};
+		DC55652428CBBEDD0093384F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PDF Test (macOS)/PDF_Test__macOS_.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDF Test (macOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.PDF-Test--macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DC55652528CBBEDD0093384F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PDF Test (macOS)/PDF_Test__macOS_.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDF Test (macOS)/Preview Content\"";
+				DEVELOPMENT_TEAM = GE3GZ86XX9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "us.gerstacker.PDF-Test--macOS-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +482,15 @@
 			buildConfigurations = (
 				DC55650F28CB7C040093384F /* Debug */,
 				DC55651028CB7C040093384F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC55652328CBBEDD0093384F /* Build configuration list for PBXNativeTarget "PDF Test (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC55652428CBBEDD0093384F /* Debug */,
+				DC55652528CBBEDD0093384F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
